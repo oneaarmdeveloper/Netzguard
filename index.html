@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netguard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>NetGuard-AI</h1>
+            <div class="status-indicator">
+                <span class="status-dot active"></span>
+                <span>System Active</span>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <h3>Emails Scanned</h3>
+                    <span class="stat-number" id="emailsScanned">0</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Threats Blocked</h3>
+                    <span class="stat-number" id="threatsBlocked">0</span>
+                </div>
+                <div class="stat-card">
+                    <h3>Network Anomalies</h3>
+                    <span class="stat-number" id="networkAnomalies">0</span>
+                </div>
+            </section>
+
+            <section class="analysis-grid">
+                <div class="analysis-panel">
+                    <h2>Email Security</h2>
+                    <div class="sample-buttons">
+                        <h4>Quick Test Samples</h4>
+                        <div class="button-grid">
+                            <button class="sample-btn" onclick="loadSample(0)">Phishing Alert</button>
+                            <button class="sample-btn" onclick="loadSample(1)">Legitimate Emails</button>
+                            <button class="sample-btn" onclick="loadSample(2)">Lottery Scam</button>
+                            <button class="sample-btn" onclick="loadSample(3)">Business Email</button>
+                            <button class="sample-btn" onclick="loadSample(0)">Payment Scam</button>
+                        </div>
+                    </div>
+                    <div class="input-section">
+                        <textarea id="emailInput" placeholder="Paste or enter email content here or use sample button above"></textarea>
+                        <button id="analyzeEmail" class="analyse-btn">Analyze Email</button>
+                    </div>
+                </div> <div class="analysis-panel"> <h2>Network Traffic</h2>
+                    <div class="network-controls">
+                        <button id="startMonitoring" class="control-btn">Start Monitoring</button>
+                        <button id="stopMonitoring" class="control-btn secondary" disabled>Stop Monitoring</button>
+                    </div>
+                    <div id="networkResults" class="results-panel">
+                        <div class="result-message info">
+                            <span class="result-icon">🛡️</span>
+                            <span class="result-text">Click "Start Monitoring" to begin network analysis</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="alerts-section">
+                <h2>Recent Alerts</h2>
+                <div id="alertsList" class="alerts-list">
+                    <p class="no-alerts"> No recent alerts</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
