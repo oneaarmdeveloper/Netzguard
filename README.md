@@ -3,7 +3,7 @@
 
 NetGuard is a **cybersecurity simulation dashboard** that analyzes emails for phishing attempts and monitors network traffic for anomalies
 
-## 🚀 Features
+##  Features
 - **Email Security Analysis**  
   - Detects phishing using keyword weights, suspicious URLs, urgency, grammar checks, and more.  
   - Sample phishing & legitimate emails included for quick testing.  
@@ -18,19 +18,19 @@ NetGuard is a **cybersecurity simulation dashboard** that analyzes emails for ph
   - Recent Alerts panel with severity badges.  
   - Responsive design with a professional look.  
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend:** HTML, CSS (grid, flexbox, animations)  
 - **Logic:** Vanilla JavaScript (ES6 Classes)  
 - **Design:** Dark theme with CSS variables for easy customization  
 
-## ⚡ Challenges Faced
+##  Challenges Faced
 Building NetGuard-AI wasn’t without hurdles:
 - **Phishing Classification** – Designing logic that can actually differentiate between real emails and phishing attempts. At first, legitimate newsletters with “unsubscribe” links were wrongly flagged. Balancing suspicious vs. legitimate keywords was tricky.  
 - **Network Traffic Simulation** – Making random traffic feel *realistic* while still being testable.  
 - **Styling Bugs** – Some CSS variable typos (`--dsanger`, `var(-danger)`) caused parts of the UI to break until debugged.  
 - **False Positives** – Emails that were safe sometimes got flagged as phishing, especially when they had urgency words. Handling this taught me about precision vs. recall trade-offs in security systems.  
 
-## 🎯 Future Improvements
+##  Future Improvements
 - Add **machine learning model integration** for smarter email classification.  
 - Persist alerts & stats using localStorage or a small backend.  
 - Improve grammar/spam detection with NLP techniques.  
@@ -38,7 +38,7 @@ Building NetGuard-AI wasn’t without hurdles:
 
 Here is a link to take a look and test:   
 
-## 💡 How to Run
+##  How to Run
 1. Clone the repo:  
    ```bash
    git clone https://github.com/oneaarmdeveloper/Netzguard.git
