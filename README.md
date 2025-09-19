@@ -36,7 +36,7 @@ Building NetGuard-AI wasn’t without hurdles:
 - Improve grammar/spam detection with NLP techniques.  
 - Export reports of detected threats.  
 
-Here is a link to take a look and test:   
+Here is a link to take a look and test:   https://oneaarmdeveloper.github.io/Netzguard/
 
 ##  How to Run
 1. Clone the repo:  
