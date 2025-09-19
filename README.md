@@ -43,3 +43,7 @@ Here is a link to take a look and test:
    ```bash
    git clone https://github.com/oneaarmdeveloper/Netzguard.git
    cd Netzguard
+   
+2.Open index.html in your browser.
+
+Test with the sample emails or enter your own content.
